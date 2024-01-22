@@ -45,11 +45,15 @@
       .t-style-primary {
         font-family: 'Manrope', sans-serif;
       }
+      .duration {
+        transition: 0.3s;
+      }
     </style>
   </head>
   <body class="t-style-primary">
     <div class="w-[95%] md:w-11/12 xl:w-5/6 max-w-[1500px] m-auto">
-      <header class="my-9">
+      <!-- Start Header section=============== -->
+      <header class="my-12">
         <div
           class="navbar flex items-center flex-col sm:flex-row sm:justify-between bg-base-100 bg-white"
         >
@@ -75,70 +79,130 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 ml-[-140px] sm:ml-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 ml-[-140px] sm:ml-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal text-primarybg bg-white text-[#424247] border-primary border-2"
               >
-                <li>
-                  <a href="#" class="font-medium text-base">Home</a>
+                <li class="bg-none hover:text-primary">
+                  <a href="#" class="text-primary">Home</a>
                 </li>
-                <li>
-                  <a href="#" class="font-medium text-base">Services</a>
+                <li class="hover:text-primary">
+                  <a href="#">About</a>
                 </li>
-                <li>
-                  <a href="#" class="font-medium text-base">Cases</a>
+                <li class="hover:text-primary">
+                  <a href="#">Page</a>
                 </li>
-                <li>
-                  <a href="#" class="font-medium text-base">Blog</a>
+                <li class="hover:text-primary">
+                  <a href="#">Blog</a>
                 </li>
-                <li>
-                  <a href="#" class="font-medium text-base">Contact Us</a>
+                <li class="hover:text-primary">
+                  <a href="#">Contact</a>
                 </li>
-                <div>
-                  <a
-                    class="btn bg-primary hover:border-primary sm:hidden text-base font-bold w-full text-white"
-                    >Free Consultation</a
-                  >
+                <div
+                  class="w-full duration bg-primary hover:bg-white py-1 text-center rounded-lg border-2 border-primary text-xl font-bold text-white hover:text-primary"
+                >
+                  <a href="#">Get Ticket</a>
                 </div>
               </ul>
             </div>
             <a
               href="#"
-              class="btn-ghost poppins text-3xl sm:text-4xl font-bold px-0 hover:bg-white"
+              class="btn-ghost text-primarybg poppins text-3xl sm:text-4xl font-bold px-0 hover:bg-white"
               >Hockey<span class="text-primary">’</span>s</a
             >
           </div>
           <div class="navbar-center">
             <div class="navbar-center hidden lg:flex">
               <ul
-                class="menu menu-horizontal px-1 text-base font-normal text-tprimary"
+                class="menu menu-horizontal px-1 text-base font-normal text-[#424247]"
               >
                 <li class="bg-none hover:text-primary">
-                  <a href="#">Home<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#" class="text-primary">Home</a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Services<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">About</a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Cases<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">Page</a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">Blog</a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#"
-                    >Contact Us <i class="fa-solid fa-angle-down"></i
-                  ></a>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="hidden sm:block">
+          <div class="hidden sm:block transic">
+            <a href="#" class="text-[#424247] pr-6"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
             <a
-              class="btn bg-primary border-primary hover:border-primary text-base sm:text-lg font-semibold px-5 sm:px-7 text-white"
-              >Free Consultation</a
+              href="#"
+              class="duration bg-primary border-2 border-primary text-xl font-bold sm:text-lg px-6 py-2 rounded-lg sm:px-6 text-white hover:bg-white hover:text-primary"
+              >Get Ticket</a
             >
           </div>
         </div>
       </header>
+
+      <!-- Start main section ================ -->
+
+      <main>
+        <!-- Main section one start for banner design...==================== -->
+        <section class="w-full">
+          <div class="carousel w-full h-[200px] sm:h-[550px]">
+            <!-- Slider One==== -->
+            <div
+              id="slide1"
+              class="carousel-item w-full rounded-2xl bg-[url('./Images/bannar.png')] bg-cover bg-center flex items-end justify-center sm:justify-between"
+            >
+              <div class="flex gap-4 m-2 sm:m-5">
+                <a href="#slide4" class="btn btn-circle scale-75 sm:scale-100">❮</a>
+                <a href="#slide2" class="btn btn-circle scale-75 sm:scale-100">❯</a>
+              </div>
+              <div
+                class="p-7 space-y-4 w-[560px] bg-primarybg rounded-2xl m-5 hidden sm:block"
+              >
+                <h2 class="text-2xl font-extrabold text-white">
+                  Meet all the heroes from the field
+                </h2>
+                <p>
+                  Unite champions across domains, from scientists to activists,
+                  cultivating a force for positive change, embodying resilience,
+                  innovation, and compassion.
+                </p>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img class="rounded-2xl w-full" src="./Images/bannar.png" />
+              <div
+                class="absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-5 top-auto"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img class="rounded-2xl w-full" src="./Images/bannar.png" />
+              <div
+                class="absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-5 top-auto"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img class="rounded-2xl w-full" src="./Images/bannar.png" />
+              <div
+                class="absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-5 top-auto"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
