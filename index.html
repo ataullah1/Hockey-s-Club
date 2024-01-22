@@ -48,6 +48,10 @@
       .duration {
         transition: 0.3s;
       }
+      .radial-progress.text-red-600 {
+        --size: 10rem;
+        transform: rotate(146deg);
+      }
     </style>
   </head>
   <body class="t-style-primary">
@@ -292,11 +296,11 @@
           <div>
             <div class="text-center">
               <div
-                class="radial-progress"
-                style="--value: 80"
+                class="radial-progress text-red-600"
+                style="--value: 87"
                 role="progressbar"
               >
-                80%
+                <h2 class="text-[28px] font-extrabold -rotate-90">87%</h2>
               </div>
             </div>
             <h3 class="text-primarybg text-xl font-semibold text-center">
@@ -309,11 +313,11 @@
           <div>
             <div class="text-center">
               <div
-                class="radial-progress"
-                style="--value: 80"
+                class="radial-progress text-emerald-400"
+                style="--value: 95"
                 role="progressbar"
               >
-                80%
+                95%
               </div>
             </div>
             <h3 class="text-primarybg text-xl font-semibold text-center">
@@ -326,11 +330,11 @@
           <div>
             <div class="text-center">
               <div
-                class="radial-progress"
-                style="--value: 80"
+                class="radial-progress text-amber-400"
+                style="--value: 90"
                 role="progressbar"
               >
-                80%
+                90%
               </div>
             </div>
             <h3 class="text-primarybg text-xl font-semibold text-center">
@@ -343,7 +347,7 @@
           <div>
             <div class="text-center">
               <div
-                class="radial-progress"
+                class="radial-progress text-blue-600"
                 style="--value: 80"
                 role="progressbar"
               >
