@@ -48,8 +48,11 @@
       .duration {
         transition: 0.3s;
       }
-      .radial-progress.text-red-600 {
-        --size: 10rem;
+      .radial-progress.text-red-600,
+      .radial-progress.text-emerald-400,
+      .radial-progress.text-amber-400,
+      .radial-progress.text-blue-600 {
+        --size: 8rem;
         transform: rotate(146deg);
       }
     </style>
@@ -281,7 +284,7 @@
         <!-- Section Two for Radio Progress  +============= -->
         <section class="py-24">
           <div
-            class="space-y-6 py-8 border-t-[1px] border-b-[1px] border-dotted border-[#13131233]"
+            class="space-y-6 py-8 mb-12 border-t-[1px] border-b-[1px] border-dotted border-[#13131233]"
           >
             <h1 class="text-center text-4xl font-extrabold text-primarybg">
               Professional Hockeys Club
@@ -291,77 +294,88 @@
               teamwork, and the pursuit of victory, captivating fans worldwide.
             </p>
           </div>
+
+          <div
+            class="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-4 md:grid-rows-1 justify-around gap-4"
+          >
+            <div class="max-w-64 m-auto">
+              <div class="text-center">
+                <div
+                  class="radial-progress text-red-600"
+                  style="--value: 87"
+                  role="progressbar"
+                >
+                  <h2 class="text-[28px] font-extrabold -rotate-[-212deg]">
+                    87%
+                  </h2>
+                </div>
+              </div>
+              <h3 class="text-primarybg text-xl font-semibold text-center">
+                Prayer Facility
+              </h3>
+              <p class="text-center text-[#13131299] text-base font-normal">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
+            </div>
+            <div class="max-w-64 m-auto">
+              <div class="text-center">
+                <div
+                  class="radial-progress text-emerald-400"
+                  style="--value: 95"
+                  role="progressbar"
+                >
+                  <h1 class="text-[28px] font-extrabold -rotate-[-212deg]">
+                    95%
+                  </h1>
+                </div>
+              </div>
+              <h3 class="text-primarybg text-xl font-semibold text-center">
+                Prayer Facility
+              </h3>
+              <p class="text-center text-[#13131299] text-base font-normal">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
+            </div>
+            <div class="max-w-64 m-auto">
+              <div class="text-center">
+                <div
+                  class="radial-progress text-amber-400"
+                  style="--value: 90"
+                  role="progressbar"
+                >
+                  <h1 class="text-[28px] font-extrabold -rotate-[-212deg]">
+                    90%
+                  </h1>
+                </div>
+              </div>
+              <h3 class="text-primarybg text-xl font-semibold text-center">
+                Prayer Facility
+              </h3>
+              <p class="text-center text-[#13131299] text-base font-normal">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
+            </div>
+            <div class="max-w-64 m-auto">
+              <div class="text-center">
+                <div
+                  class="radial-progress text-blue-600"
+                  style="--value: 80"
+                  role="progressbar"
+                >
+                  <h1 class="text-[28px] font-extrabold -rotate-[-212deg]">
+                    80%
+                  </h1>
+                </div>
+              </div>
+              <h3 class="text-primarybg text-xl font-semibold text-center">
+                Prayer Facility
+              </h3>
+              <p class="text-center text-[#13131299] text-base font-normal">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
+            </div>
+          </div>
         </section>
-        <div class="flex justify-around gap-4">
-          <div>
-            <div class="text-center">
-              <div
-                class="radial-progress text-red-600"
-                style="--value: 87"
-                role="progressbar"
-              >
-                <h2 class="text-[28px] font-extrabold -rotate-90">87%</h2>
-              </div>
-            </div>
-            <h3 class="text-primarybg text-xl font-semibold text-center">
-              Prayer Facility
-            </h3>
-            <p class="text-center text-[#13131299] text-base font-normal">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div>
-            <div class="text-center">
-              <div
-                class="radial-progress text-emerald-400"
-                style="--value: 95"
-                role="progressbar"
-              >
-                95%
-              </div>
-            </div>
-            <h3 class="text-primarybg text-xl font-semibold text-center">
-              Prayer Facility
-            </h3>
-            <p class="text-center text-[#13131299] text-base font-normal">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div>
-            <div class="text-center">
-              <div
-                class="radial-progress text-amber-400"
-                style="--value: 90"
-                role="progressbar"
-              >
-                90%
-              </div>
-            </div>
-            <h3 class="text-primarybg text-xl font-semibold text-center">
-              Prayer Facility
-            </h3>
-            <p class="text-center text-[#13131299] text-base font-normal">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-          <div>
-            <div class="text-center">
-              <div
-                class="radial-progress text-blue-600"
-                style="--value: 80"
-                role="progressbar"
-              >
-                80%
-              </div>
-            </div>
-            <h3 class="text-primarybg text-xl font-semibold text-center">
-              Prayer Facility
-            </h3>
-            <p class="text-center text-[#13131299] text-base font-normal">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
-          </div>
-        </div>
         <!-- Section Three============ -->
         <section class="hidden">
           <div
